@@ -5,12 +5,14 @@
 
 # Prerequisite
 **Install PIN**
+
 Decompress the PIN version 3.11. The version that supported by ChampSim in the original document (version 3.2)does not support the latest kernel any more.
 ```
 tar -zxvf pin-3.11-97998-g7ecce2dac-gcc-linux.tar.gz
 ```
 
 **Change the path of the trace collecting script**
+
 In `tracer/run_tracer.sh`, there are several variable that need to be changed in order to run the script on your own machine.
 ```
 ${PIN_SOURCE}:  The path to the PIN binary                                   
@@ -124,6 +126,7 @@ pin -t obj/champsim_tracer.so -o traces/ls_trace.champsim -s 100000 -t 200000 --
 ```
 Traces created with the champsim_tracer.so are approximately 64 bytes per instruction,
 but they generally compress down to less than a byte per instruction using xz compression.
+
 **Use scripts**
 ```
 # under tracer/
