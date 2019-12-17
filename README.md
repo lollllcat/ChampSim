@@ -99,7 +99,10 @@ $ ./run_champsim.sh mybranch-mypref-mypref-mypref-myrepl-1core 1 10 bzip2_183B
 ```
 
 # How to create traces
-
+```
+python run.py 
+```
+under tracer folder is easiest approach to generate poly trace.
 **Use the Pin tool like this**
 ```
 pin -t obj-intel64/champsim_tracer.so -- <your program here>
